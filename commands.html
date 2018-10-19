@@ -1,0 +1,162 @@
+
+<html>
+	<head>
+		<title>SUAIO | Commands</title>
+		<style>
+			body{
+			    -webkit-animation: fadein 2s;
+				-moz-animation: fadein 2s; 
+				-ms-animation: fadein 2s; 
+				-o-animation: fadein 2s; 
+				animation: fadein 2s;
+				background-color: #2A2D32;
+				color: #FFFFFF;
+			}
+			#body {
+				padding-top: 2%;
+				padding-left: 4%;
+				padding-right: 4%;
+			}
+			@keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			@-moz-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			@-webkit-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			@-ms-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			@-o-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			button {
+				background-color: #7289DA;
+				border: none;
+				color: #FFF;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+			    -webkit-transition-duration: 0.5s;
+				transition-duration: 0.5s;
+			}
+			button:hover {
+				background-color: #1c1f23;
+				color: #FFF;
+			}
+			header {
+				background-color: #1c1f23;
+				height: 50px;
+				line-height: 50px;
+				text-align: left;
+				padding-left: 0%;
+			}
+			#searchinput {
+				width: 100%;
+				background-color: #1c1f23; 
+				background-position: 10px 12px;
+				background-repeat: no-repeat;
+				width: 100%;
+				font-size: 16px;
+				padding: 12px 20px 12px 40px;
+				border: 1px solid #444;
+				margin-bottom: 12px;
+				color: #FFF;
+			}
+			#commands {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+				padding-top: 20px;
+			}
+			#commands li a {
+			    border: 1px solid #444; 
+				margin-top: -1px; 
+				background-color: #1c1f23; 
+				padding: 12px; 
+				text-decoration: none; 
+				font-size: 18px; 
+				color: #EEE; 
+				display: block; 
+			}
+		</style>
+		<script>
+		function search() {
+			var input, filter, ul, li, a, i;
+			input = document.getElementById('searchinput');
+			filter = input.value.toUpperCase();
+			ul = document.getElementById("commands");
+			li = ul.getElementsByTagName('li');
+
+			// Loop through all list items, and hide those who don't match the search query
+			for (i = 0; i < li.length; i++) {
+				a = li[i].getElementsByTagName("a")[0];
+				if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+					li[i].style.display = "";
+				} else {
+					li[i].style.display = "none";
+				}
+			}
+		}
+		</script>
+	</head>
+	<header>
+		<p style="padding-bottom: 0.1%; font-size: 30px; font-family: Sans-serif"><span style="color: #2A2D32;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">-</span><img src="images/back.png" vertical-align="middle" width="20px" onclick="location.href='./index.html'">  Command List</p>
+	</header>
+	<body>
+	<div>
+		<div id="body">
+			<input type="text" onkeyup="search()" placeholder="Search for commands.." id="searchinput">
+			<ul id="commands">
+				<li><a href="#">[p]prefix (prefix)</a></li>
+				<li><a href="#">[p]delete [user]</a></li>
+				<li><a href="#">[p]dbl (bot user)</a></li>
+				<li><a href="#">[p]gay [user]</a></li>
+				<li><a href="#">[p]love (user)</a></li>
+				<li><a href="#">[p]youvsshe [user]</a></li>
+				<li><a href="#">[p]wasted [user]</a></li>
+				<li><a href="#">[p]warning [user]</a></li>
+				<li><a href="#">[p]bird</a></li>
+				<li><a href="#">[p]cat</a></li>
+				<li><a href="#">[p]dog</a></li>
+				<li><a href="#">[p]fox</a></li>
+				<li><a href="#">[p]hug (user)</a></li>
+				<li><a href="#">[p]identicon (text)</a></li>
+				<li><a href="#">[p]kiss (user)</a></li>
+				<li><a href="#">[p]nya</a></li>
+				<li><a href="#">[p]pat (user)</a></li>
+				<li><a href="#">[p]robloxians</a></li>
+				<li><a href="#">[p]shoot (user)</a></li>
+				<li><a href="#">[p]slap (user)</a></li>
+				<li><a href="#">[p]trump (text)</a></li>
+				<li><a href="#">[p]8ball (question)</a></li>
+				<li><a href="#">[p]badges [user]</a></li>
+				<li><a href="#">[p]emolets (text)</a></li>
+				<li><a href="#">[p]help</a></li>
+				<li><a href="#">[p]info</a></li>
+				<li><a href="#">[p]lyrics (text)</a></li>
+				<li><a href="#">[p]ping</a></li>
+				<li><a href="#">[p]translate (iso) (text)</a></li>
+				<li><a href="#">[p]urban (text)</a></li>
+				<li><a href="#">[p]ban (user)</a></li>
+				<li><a href="#">[p]idban (user)</a></li>
+				<li><a href="#">[p]kick (user)</a></li>
+				<li><a href="#">[p]prune (2-100)</a></li>
+				<li><a href="#">[p]softban (user)</a></li>
+				<li><a href="#">[p]warn (user) [reason]</a></li>
+				<li><a href="#">[p]warns [user]</a></li>
+			</ul>
+			<p style="padding-left: 3%; padding-bottom: 2%;">Notes:<br><br>1) [p] = prefix (Default prefix is <strong>s!</strong>)<br>2) Arguments in () are mandatory and the arguments in [] are optional</p>
+		</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SUAIO | Home</title>
+		<style>
+			body{
+				background-color: #2A2D32;
+				color: #FFFFFF;
+			    -webkit-animation: fadein 2s;
+				-moz-animation: fadein 2s; 
+				-ms-animation: fadein 2s; 
+				-o-animation: fadein 2s; 
+				animation: fadein 2s;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			@keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			@-moz-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			@-webkit-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			@-ms-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			@-o-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			button {
+				background-color: #7289DA;
+				border: none;
+				color: #FFF;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+			    -webkit-transition-duration: 0.5s;
+				transition-duration: 0.5s;
+			}
+			button:hover {
+				background-color: #1c1f23;
+				color: #FFF;
+			}
+			img {
+				width: 80%;
+				padding-bottom: 5%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="everything">
+			<p style="text-align:center;" id="logo"><img src="images/suaio-logo.jpg" alt="Logo"></p>
+			<div id="buttons" align="center">
+				<button onclick="location.href='https://discordapp.com/api/oauth2/authorize?client_id=366092228185292813&permissions=-1&scope=bot'">Invite</button><span style="color: #2A2D32;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">-</span>
+				<button onclick="location.href='https://discordbots.org/bot/366092228185292813'">View on DBL</button><span style="color: #2A2D32;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">-</span>
+				<button onclick="location.href='./team.html'">Team</button><br><br>
+				<button onclick="location.href='https://discord.gg/yzatNWp'">Support Server</button><span style="color: #2A2D32;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">-</span>
+				<button onclick="location.href='./commands.html'">Command list</button>		
+			</div>
+		</div>
+	</body>
+</html>
